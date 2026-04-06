@@ -1,0 +1,62 @@
+/* ===== WELCOME PAGE ===== */
+
+.welcome-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #000, #7a1c1c);
+  overflow: hidden;
+}
+
+.welcome-container {
+  text-align: center;
+}
+
+/* Logo Zoom Animation */
+.welcome-logo {
+  width: 220px;
+  margin-bottom: 30px;
+  transform: scale(0.5);
+  opacity: 0;
+  animation: zoomInLogo 1.5s ease forwards;
+  filter: drop-shadow(0 0 20px rgba(212, 160, 23, 0.6));
+}
+
+@keyframes zoomInLogo {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Enter Button */
+.enter-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #d4a017;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.enter-btn:hover {
+  transform: scale(1.05);
+  .enter-btn {
+  opacity: 0;
+  animation: fadeInBtn 1s ease forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes fadeInBtn {
+  to {
+    opacity: 1;
+  }
+}
+}
